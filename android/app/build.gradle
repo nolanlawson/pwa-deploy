@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+        mavenCentral()
+     }
+     dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+     }
+}
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.nolanlawson.pwadeploy"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+
+    signingConfigs {
+        release {
+            // avoid errors here when building for debug
+            storeFile file(System.getenv("ANDROID_KEYSTORE") ?: "./debug.keystore")
+            storePassword System.getenv("ANDROID_STORE_PASSWORD")
+            keyAlias System.getenv("ANDROID_ALIAS")
+            keyPassword System.getenv("ANDROID_PASSWORD")
+        }
+        debug {
+            storeFile file("./debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+
+}
+
+dependencies {
+    compile 'org.nanohttpd:nanohttpd:2.2.0'
+}
