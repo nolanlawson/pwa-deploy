@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "bash bin/build.sh"
+    "build": "bash bin/build.sh",
+    "test": "semistandard lib/*js"
   },
   "keywords": [],
   "author": "Nolan Lawson <nolan@nolanlawson.com>",
   "license": "Apache-2.0",
+  "files": [
+    "lib",
+    "android/app/build/outputs/apk/app-release.apk"
+  ],
+  "private": true,
   "dependencies": {
     "bluebird": "^3.4.0",
     "child-process-promise": "^2.0.2",
@@ -20,9 +26,7 @@
     "which": "^1.2.9",
     "yargs": "^4.7.1"
   },
-  "files": [
-    "lib",
-    "android/app/build/outputs/apk/app-release.apk"
-  ],
-  "private": true
+  "devDependencies": {
+    "semistandard": "^8.0.0"
+  }
 }
