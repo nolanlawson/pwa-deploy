@@ -9,7 +9,11 @@
     "build": "bash bin/build.sh",
     "test": "semistandard lib/*js"
   },
-  "keywords": [],
+  "keywords": [
+    "apk",
+    "pwa",
+    "android"
+  ],
   "author": "Nolan Lawson <nolan@nolanlawson.com>",
   "license": "Apache-2.0",
   "files": [
