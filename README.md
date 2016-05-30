@@ -1,7 +1,7 @@
 pwa-deploy
 ====
 
-Deploy a Progressive Web App to a connected Android device or emulator.
+Deploy a Progressive Web App to a connected Android device or emulator. Designed for quick and easy debugging of PWAs.
 
 This allows you to test Service Worker, since the site will be running on `localhost`.
 
@@ -13,7 +13,7 @@ npm install pwa-deploy
 ```
 
 This tool requires the [Android SDK](https://developer.android.com/studio/index.html).
-See [Setting up the Android SDK](#setting-up-the-Android-SDK) for instructions.
+See [Setting up the Android SDK](#setting-up-the-android-sdk) for instructions.
 
 Usage
 ---
