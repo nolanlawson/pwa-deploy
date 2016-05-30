@@ -1,7 +1,7 @@
 pwa-deploy
 ====
 
-**Update:** don't use this. Use [Chrome port forwarding](https://developers.google.com/web/tools/chrome-devtools/debug/remote-debugging/local-server) instead.
+⚠️ **Update:** don't use this. Use [Chrome port forwarding](https://developers.google.com/web/tools/chrome-devtools/debug/remote-debugging/local-server) instead. ⚠️
 
 Deploy a Progressive Web App (or any static website) to a connected Android device or emulator.
 Designed for quick and easy debugging of PWAs.
