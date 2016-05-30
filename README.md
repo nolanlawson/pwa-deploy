@@ -21,7 +21,7 @@ pwa-deploy /path/to/www/directory
 ```
 
 This will deploy the directory to the first available Android
-device or emulator, and then open the site in your default mobile browser.
+device or emulator, and then open the site in your default mobile browser. Android 4.0+ is supported.
 
 Advanced usage
 ----
