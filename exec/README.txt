@@ -1,0 +1,1 @@
+manually built by Nolan using android-sdk_r24.4.1
