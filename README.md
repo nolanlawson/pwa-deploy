@@ -29,7 +29,7 @@ Advanced usage
 ```
 Options:
   -d, --devices          list available devices
-  -s, --specifiedDevice  specific device id. do `pwa-deploy devices` to see
+  -s, --specificDevice   specific device id. do `pwa-deploy devices` to see
                          available
   -p                     port to run on (default: 3000)
   -h, --help             Show help                                     [boolean]
