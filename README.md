@@ -17,17 +17,11 @@ Usage
 ---
 
 ```bash
-pwa-deploy <path to www/ directory> [options]
-```
-
-E.g.
-
-```bash
-pwa-deploy /path/to/www
+pwa-deploy /path/to/www/directory
 ```
 
 This will deploy the directory to the first available Android
-device/emulator and run it in your default mobile browser.
+device or emulator, and then open the site in your default mobile browser.
 
 Advanced usage
 ----
