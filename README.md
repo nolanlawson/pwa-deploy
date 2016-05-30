@@ -9,7 +9,7 @@ Install
 ---
 
 ```bash
-npm install pwa-deploy
+npm install -g pwa-deploy
 ```
 
 This tool requires the [Android SDK](https://developer.android.com/studio/index.html).
