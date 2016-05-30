@@ -1,12 +1,55 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
 
-    <WebView
-        android:id="@+id/web_view"
+    <TextView
+        android:id="@android:id/text1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </WebView>
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:textSize="22dp"
+        android:lineSpacingExtra="2dp"
+        tools:text="here is some text"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@android:id/text1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@android:id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Launch browser"
+            android:textSize="16dp"
+            android:padding="20dp"
+            />
+
+
+        <Button
+            android:id="@android:id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@android:id/text1"
+            android:layout_centerHorizontal="true"
+            android:text="Copy URL"
+            android:textSize="16dp"
+            android:padding="20dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

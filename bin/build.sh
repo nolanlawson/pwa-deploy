@@ -13,4 +13,4 @@ fi
 source ~/.keystore_config
 
 cd android
-./gradlew assembleRelease
+./gradlew assembleDebug

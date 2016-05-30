@@ -2,7 +2,7 @@
   "name": "pwa-deploy",
   "version": "1.0.0",
   "description": "CLI to deploy a Progressive Web App to an attached Android device or emulator",
-  "main": "index.js",
+  "main": "lib/bin.js",
   "scripts": {
     "prepublish": "npm run build",
     "build": "bash bin/build.sh",
@@ -13,7 +13,7 @@
   "license": "Apache-2.0",
   "files": [
     "lib",
-    "android/app/build/outputs/apk/app-release.apk"
+    "android/app/build/outputs/apk/app-debug.apk"
   ],
   "private": true,
   "dependencies": {
@@ -21,12 +21,9 @@
     "child-process-promise": "^2.0.2",
     "denodeify": "^1.2.1",
     "mkdirp": "^0.5.1",
-    "request": "^2.72.0",
     "temp": "^0.8.3",
-    "unzip": "^0.1.11",
     "which": "^1.2.9",
-    "yargs": "^4.7.1",
-    "zipfile": "^0.5.9"
+    "yargs": "^4.7.1"
   },
   "devDependencies": {
     "semistandard": "^8.0.0"
