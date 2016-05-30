@@ -36,7 +36,7 @@ You can do `pwa-deploy --help` for full options.
 Setting up the Android SDK
 ----
 
-This requires that you have the [Android SDK](https://developer.android.com/studio/index.html) installed. (You don't need all of Anrdoid studio installed.)
+This requires that you have the [Android SDK](https://developer.android.com/studio/index.html) installed. (You don't need all of Android Studio installed.)
 
 On Mac OS X, this is as easy as:
 
