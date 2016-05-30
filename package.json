@@ -22,9 +22,11 @@
     "denodeify": "^1.2.1",
     "mkdirp": "^0.5.1",
     "request": "^2.72.0",
+    "temp": "^0.8.3",
     "unzip": "^0.1.11",
     "which": "^1.2.9",
-    "yargs": "^4.7.1"
+    "yargs": "^4.7.1",
+    "zipfile": "^0.5.9"
   },
   "devDependencies": {
     "semistandard": "^8.0.0"

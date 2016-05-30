@@ -57,5 +57,5 @@ android {
 }
 
 dependencies {
-    compile 'org.nanohttpd:nanohttpd:2.2.0'
+    compile 'org.nanohttpd:nanohttpd:2.3.0'
 }

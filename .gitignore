@@ -2,3 +2,5 @@ node_modules
 .gradle
 build
 npm-debug.log
+*.iml
+android/local.properties
