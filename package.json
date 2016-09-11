@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "CLI to deploy a Progressive Web App to an attached Android device or emulator",
   "main": "lib/bin.js",
-  "bin": "lib/bin.js",
+  "bin": {
+    "pwa-deploy": "lib/bin.js"
+  },
   "scripts": {
     "prepublish": "npm run build",
     "build": "bash bin/build.sh",
@@ -32,5 +34,13 @@
   },
   "devDependencies": {
     "semistandard": "^8.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolanlawson/pwa-deploy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nolanlawson/pwa-deploy/issues"
+  },
+  "homepage": "https://github.com/nolanlawson/pwa-deploy#readme"
 }
